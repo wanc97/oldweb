@@ -1,3 +1,28 @@
+<?php
+// Free Bootstrap Themes : 
+
+$text = "<span style='color:red; font-size: 35px; line-height: 40px; magin: 10px;'>Error! Please try again.</span>";
+
+if(isset($_POST['submitcontact']))
+{
+	$name=$_POST['name'];
+	$email=$_POST['email'];
+	$message=$_POST['message'];
+
+	$to = "youremail@gmail.com";
+	$subject = "Html5xcss3 - Testing Contact Form";
+	$message = " Name: " . $name ."\r\n Email: " . $email . "\r\n Message:\r\n" . $message;
+	 
+	$from = "";
+	$headers = "From:" . $from . "\r\n";
+	$headers .= "Content-type: text/plain; charset=UTF-8" . "\r\n"; 
+	 
+	if(@mail($to,$subject,$message,$headers))
+	{
+	  $text = "<span style='color:blue; font-size: 35px; line-height: 40px; margin: 10px;'>Your Message was sent successfully !</span>";
+	}
+}
+?>
 <html>
 <head>
   <!-- META DATA -->
@@ -33,42 +58,42 @@
 </head>
 
 <body class="sub-page">	
-		<!-- /////////////////////////////////////////Navigation -->
-		<nav class="navbar navbar-default navbar-fixed-top">
-			<div class="container">
-				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header page-scroll">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand page-scroll" href="index.html">Note Go</a>
-				</div>
-	
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					<ul class="nav navbar-nav navbar-right">
-						<li>
-							<a class="page-scroll" href="index.html">主页</a>
-						</li>
-						<li>
-							<a class="page-scroll" href="archive.html">博客</a>
-						</li>
-						<li>
-							<a class="page-scroll" href="single.html">关于</a>
-						</li>
-						<li>
-							<a class="page-scroll" href="contact.html">友情链接</a>
-						</li>
-					</ul>
-				</div>
-				<!-- /.navbar-collapse -->
-			</div>
-			<!-- /.container-fluid -->
-		</nav>
-		<!-- Navigation -->
+	<!-- /////////////////////////////////////////Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="index.html">JUSTICE</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                   <li>
+                        <a class="page-scroll" href="index.html">Home</a>
+                    </li>
+					<li>
+                        <a class="page-scroll" href="archive.html">Blog</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="single.html">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+	<!-- Navigation -->
 
 	<!-- Background Gradients-->
 	<div  class="site-gradients">
@@ -122,6 +147,9 @@
 								</div>
 								<div class="col-md-8">
 									<h3>Contact Form</h3>
+									<!--Warning-->
+									<center><?php echo $text;?></center>
+									<!---->
 									<form name="form1" method="post" action="contact.php">
 										<div class="row">
 											<div class="col-md-6">
@@ -224,7 +252,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-4">
-						<p>Copyright 20xx - More Templates <a href="https://www.webmoban.net" target="_blank" title="网站模板">网站模板</a> - Collect from <a href="https://www.webmoban.net" title="网页模板" target="_blank">网页模板</a></p>
+						<p>Copyright 20xx - More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p>
 					</div>
 					<div class="col-md-4">
 						<ul class="list-inline social-buttons">
