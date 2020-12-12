@@ -357,6 +357,7 @@ h1, h2, h3, h4, h5 {
 
 .social-icons {
   text-align: right;
+  font-size: 18px;
 }
 .social-icons a {
   color: white;

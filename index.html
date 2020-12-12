@@ -1,348 +1,367 @@
-<!DOCTYPE HTML>
-<html lang="zh-CN">
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Note Go - 极客修炼手册</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/templatemo-style.css">
+        <link rel="stylesheet" href="css/other.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <div class="site-bg"></div>
+        <div class="site-bg-overlay"></div>
 
-<html>
-<head>
-  <!-- META DATA -->
-	<meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Free Bootstrap Themes by HTML5XCSS3 dot com - Free Responsive Html5 Templates">
-    <meta name="author" content="万川">
-
-	<title>Note Go - 所有的幸福与痛苦都是修行的结果</title>
-  
-	<!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css"  type="text/css">
-	
-	<!-- Owl Carousel Assets -->
-    <link href="owl-carousel/owl.carousel.css" rel="stylesheet">
-    <!-- <link href="owl-carousel/owl.theme.css" rel="stylesheet"> -->
-	
-	<!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
-	
-	<!-- Custom Fonts -->
-    <link rel="stylesheet" href="font-awesome-4.4.0/css/font-awesome.min.css"  type="text/css">
-	<link href='http://fonts.googleapis.com/css?family=Asap:400,700' rel='stylesheet' type='text/css'>
-	
-	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="js/html5shiv.js"></script>
-        <script src="js/respond.min.js"></script>
-    <![endif]-->
-	
-</head>
-
- <body class="index-page">
-
-	<!-- /////////////////////////////////////////Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" href="index.html">Note Go</a>
+        <!-- TOP HEADER -->
+        <div class="top-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <a class="navbar-brand page-scroll" href="#">Note Go</a>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="social-icons">
+                            <ul>
+                                <li><a href="https://github.com/wanc97" ><i class="fa fa-github" ></i></a></li>
+                                <li><a href="mailto:wanc97@qq.com"><i class="fa fa-envelope"></i></a></li>
+                                <li><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzI4MzEzNjIxNw==#wechat_redirect"><i class="fa fa-weixin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div> <!-- .top-header -->
 
-            <!-- Collect the nav links, forms, and o ther content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-					<li>
-                        <a class="page-scroll" href="index.html">主页</a>
-                    </li>
-					<li>
-                        <a class="page-scroll" href="archive.html">博客</a>
+
+        <div class="visible-xs visible-sm responsive-menu">
+            <a href="#" class="toggle-menu">
+                <i class="fa fa-bars"></i> 目录
+            </a>
+            <div class="show-menu">
+                <ul class="main-menu">
+                    <li>
+                        <a class="show-1 active homebutton" href="#"><i class="fa fa-home"></i>首页</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="single.html">关于</a>
+                        <a class="show-3 projectbutton" href="#"><i class="fa fa-university"></i>博客</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="contact.html">友情链接</a>
+                        <a class="show-2 aboutbutton" href="#"><i class="fa fa-user"></i>作者</a>
+                    </li>
+                    <li>
+                        <a class="show-5 contactbutton" href="#"><i class="fa fa-envelope"></i>反馈</a>
                     </li>
                 </ul>
             </div>
-            <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container-fluid -->
-    </nav>
-	<!-- Navigation -->
-	<!-- CAROUSEL -->
-	<div id="carousel-example-generic" class="carousel slide hidden-xs" data-ride="carousel" data-interval="4000">
-		<!-- Wrapper for slides -->
-		<div class="carousel-inner">
-			<div class="item active">
-				<img src="images/banner2.jpg" alt="...">
-				<!-- Static Header -->
-				<div class="container">
-				<div class="header-text hidden-xs">
-					<div class="col-md-12 text-center">
-						<p>内心平静的时候与专注的时候是最幸福的。</p>
-					</div>
-				</div><!-- /header-text -->
-				</div>
-				
-			</div>
-			
-		</div>
-		
-		
-		<!-- Controls -->
-		<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-			<span class="glyphicon glyphicon-chevron-left"></span>
-		</a>
-		<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-			<span class="glyphicon glyphicon-chevron-right"></span>
-		</a>
-	</div> <!-- Carousel -->
-	
-	
-	
-	<!-- /////////////////////////////////////////Content -->
-	<div id="page-content">
-	
-		<!-- ////////////Content Box 01 -->
-		<section class="box-content box-1">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-4">
-						<div class="box-item">
-							<img src="images/13.jpg" class="img-responsive"/>
-							<div class="content">
-								<h3>Pellentesque vehicula</h3>
-								<p>Nunc eu velit metus. Donec in massa libero. Donec bibendum orci a lorem scelerisque luctus. Aliquam et ante quis erat semper pretium. Pellentesque vehicula.</p>
-								<a href="blog/one.html">Read More...</a>
-								<br><br>
-								<span>MAY 21, 2014 BY VAFPRESS</span><br>
-							</div>
-						</div>
-						<div class="box-item">
-							<img src="images/1.jpg" class="img-responsive"/>
-							<div class="content">
-								<h3>Planning Our Honeymoon</h3>
-								<p>Suspendisse porttitor sapien ac lectus euismod imperdiet. Curabitur nec nibh at massa pellentesque accumsan eu id nibh. Donec accumsan ut mi et tincidunt. Aliquam eget metus nec leo tempor bibendum. Phasellus tincidunt lobortis metus. Duis euismod lorem turpis at diam.</p>
-								<a href="single.html">Read More...</a>
-								<br><br>
-								<span>MAY 21, 2014 BY VAFPRESS</span><br>
-							</div>
-						</div>
-						<div class="box-item">
-							<img src="images/2.jpg" class="img-responsive"/>
-							<div class="content">
-								<h3>Brainstorming Wedding Ideas</h3>
-								<p>Suspendisse porttitor. Aliquam eget metus nec leo tempor bibendum. Phasellus tincidunt lobortis metus. Duis euismod lorem turpis, viverra feugiat ipsum volutpat vitae. Fusce justo turpis, sodales sed placerat non, suscipit at diam.</p>
-								<a href="single.html">Read More...</a>
-								<br><br>
-								<span>MAY 21, 2014 BY VAFPRESS</span><br>
-							</div>
-						</div>
-						<div class="box-item">
-							<img src="images/10.jpg" class="img-responsive"/>
-							<div class="content">
-								<h3>Choosing The Bridesmaids and Groomsmen</h3>
-								<p>Suspendisse porttitor sapien ac lectus euismod imperdiet. Curabitur nec nibh at massa pellentesque accumsan eu id nibh. Donec accumsan ut mi.</p>
-								<a href="single.html">Read More...</a>
-								<br><br>
-								<span>MAY 21, 2014 BY VAFPRESS</span><br>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="box-item">
-							<img src="images/3.jpg" class="img-responsive"/>
-							<div class="content">
-								<h3>Donec bibendum orci</h3>
-								<p>Nunc eu velit metus. Donec in massa libero. Donec bibendum orci a lorem scelerisque luctus. Aliquam et ante quis erat semper pretium. Pellentesque vehicula.</p>
-								<a href="single.html">Read More...</a>
-								<br><br>
-								<span>MAY 21, 2014 BY VAFPRESS</span><br>
-							</div>
-						</div>
-						<div class="box-item">
-							<img src="images/4.jpg" class="img-responsive"/>
-							<div class="content">
-								<h3>Met Dovey’s Parents in Chicago</h3>
-								<p>Class aptent taciti urna bibendum id. Duis a commodo lectus. Morbi id purus nec purus feugiat vestibulum. Suspendisse sapien ante, bibendum ac quam quis, imperdiet bibendum sem. Curabitur nibh magna, tristique et convallis…</p>
-								<a href="single.html">Read More...</a>
-								<br><br>
-								<span>MAY 21, 2014 BY VAFPRESS</span><br>
-							</div>
-						</div>
-						<div class="box-item">
-							<img src="images/8.jpg" class="img-responsive"/>
-							<div class="content">
-								<h3>Choosing The Bridesmaids and Groomsmen</h3>
-								<p>Suspendisse porttitor sapien ac lectus euismod imperdiet. Curabitur nec nibh at massa pellentesque accumsan eu id nibh. Donec accumsan ut mi.</p>
-								<a href="single.html">Read More...</a>
-								<br><br>
-								<span>MAY 21, 2014 BY VAFPRESS</span><br>
-							</div>
-						</div>
-						<div class="box-item">
-							<img src="images/11.jpg" class="img-responsive"/>
-							<div class="content">
-								<h3>She Said Yes!</h3>
-								<p>Nunc eu velit metus. Donec in massa libero. Donec bibendum orci a lorem scelerisque luctus. Aliquam et ante quis erat semper pretium. Pellentesque vehicula.</p>
-								<a href="single.html">Read More...</a>
-								<br><br>
-								<span>MAY 21, 2014 BY VAFPRESS</span><br>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="box-item">
-							<img src="images/5.jpg" class="img-responsive"/>
-							<div class="content">
-								<h3>Choosing The Bridesmaids and Groomsmen</h3>
-								<p>Suspendisse porttitor sapien ac lectus euismod imperdiet. Curabitur nec nibh at massa pellentesque accumsan eu id nibh. Donec accumsan ut mi.</p>
-								<a href="single.html">Read More...</a>
-								<br><br>
-								<span>MAY 21, 2014 BY VAFPRESS</span><br>
-							</div>
-						</div>
-						<div class="box-item">
-							<img src="images/12.jpg" class="img-responsive"/>
-							<div class="content">
-								<h3>She Said Yes!</h3>
-								<p>Nunc eu velit metus. Donec in massa libero. Donec bibendum orci a lorem scelerisque luctus. Aliquam et ante quis erat semper pretium. Pellentesque vehicula.</p>
-								<a href="single.html">Read More...</a>
-								<br><br>
-								<span>MAY 21, 2014 BY VAFPRESS</span><br>
-							</div>
-						</div>
-						<div class="box-item">
-							<img src="images/6.jpg" class="img-responsive"/>
-							<div class="content">
-								<h3>A Sweet Escape to Paris</h3>
-								<p>Proin lobortis mattis odio non ornare. Sed tempor nisi eu hendrerit luctus. Class aptent taciti sociosqu ad litora torquent per conubia nostravelit id sem tincidunt convallis ac eget quam. Vestibulum posuere porttitor sapien .</p>
-								<a href="single.html">Read More...</a>
-								<br><br>
-								<span>MAY 21, 2014 BY VAFPRESS</span><br>
-							</div>
-						</div>
-						<div class="box-item">
-							<img src="images/7.jpg" class="img-responsive"/>
-							<div class="content">
-								<h3>Met Dovey’s Parents in Chicago</h3>
-								<p>Class aptent taciti urna bibendum id. Duis a commodo lectus. Morbi id purus nec purus feugiat vestibulum. Suspendisse sapien ante, bibendum ac quam quis, imperdiet bibendum sem. Curabitur nibh magna, tristique et convallis…</p>
-								<a href="single.html">Read More...</a>
-								<br><br>
-								<span>MAY 21, 2014 BY VAFPRESS</span><br>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-	</div>
-	
-	<!-- FOOTER -->
-	<footer>
-		<div class="wrap-footer">
-			<div class="container">
-				<div class="row"> 
-					<div class="col-footer col-md-3">
-						<h2 class="footer-title">About Us</h2>
-						<div class="textwidget">Aenean feugiat in ante et blandit. Vestibulum posuere molestie risus, ac interdum magna porta non. Pellentesque rutrum fringilla elementum. Curabitur tincidunt porta lorem vitae accumsan. <br> <br> 
-						Aenean feugiat in ante et blandit. Vestibulum posuere molestie risus, ac interdum magna porta non. Pellentesque rutrum fringilla elementum. Curabitur tincidunt porta lorem vitae accumsan.</div>
-					</div> 
-					<div class="col-footer col-md-3 widget_recent_entries">
-						<h2 class="footer-title">Recent Posts</h2>
-						<ul>
-							<li><a href="#">MOST VISITED COUNTRIES</a></li>
-							<li><a href="#">5 PLACES THAT MAKE A GREAT HOLIDAY</a></li>
-							<li><a href="#">PEBBLE TIME STEEL IS ON TRACK TO SHIP IN JULY</a></li>
-							<li><a href="#">STARTUP COMPANY&#8217;S CO-FOUNDER TALKS ON HIS NEW PRODUCT</a></li>
-						</ul>
-					</div>
-					<div class="col-footer col-md-3">
-						<h2 class="footer-title">NEWS LETTER</h2>
-						If you want to receive our latest news send directly to your email, please leave your email address bellow. Subscription is free and you can cancel anytime.
-						<form action="#" method="post">
-							<input type="text" name="your-name" value="" size="40" placeholder="Your Email" />
-							<input type="submit" value="SUBSCRIBE" class="btn btn-skin" />
-						</form>
-					</div>
-					<div class="col-footer col-md-3">
-						<h2 class="footer-title">Tags</h2>
-						<div class="footer-tags">
-							<a href="#">animals</a>
-							<a href="#">cooking</a>
-							<a href="#">countries</a>
-							<a href="#">city</a>
-							<a href="#">children</a>
-							<a href="#">home</a>
-							<a href="#">likes</a>
-							<a href="#">photo</a>
-							<a href="#">link</a>
-							<a href="#">law</a>
-							<a href="#">shopping</a>
-							<a href="#">skate</a>
-							<a href="#">scholl</a>
-							<a href="#">video</a>
-							<a href="#">travel</a>
-							<a href="#">images</a>
-							<a href="#">love</a>
-							<a href="#">lists</a>
-							<a href="#">makeup</a>
-							<a href="#">media</a>
-							<a href="#">password</a>
-							<a href="#">pagination</a>
-							<a href="#">wildlife</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="bottom-footer">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-4">
-						<p>Copyright 20xx - More Templates <a href="https://www.webmoban.net" target="_blank" title="网站模板">网站模板</a> - Collect from <a href="https://www.webmoban.net" title="网页模板" target="_blank">网页模板</a></p>
-					</div>
-					<div class="col-md-4">
-						<ul class="list-inline social-buttons">
-							<li><a href="https://github.com/wanc97" ><i class="fa fa-github" ></i></a>
-							</li>
-							<li><a href="mailto:wanc97@qq.com"><i class="fa fa-envelope"></i></a>
-							</li>
-							<li><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzI4MzEzNjIxNw==#wechat_redirect"><i class="fa fa-weixin"></i></a>
-							</li>
-						</ul>
-					</div>
-					
-					<div class="col-md-4">
-						<ul class="list-inline quicklinks">
-							<li><a href="#">Privacy Policy</a>
-							</li>
-							<li><a href="#">Terms of Use</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
+        <div class="container" id="page-content">
+            <div class="row">
+                <div class="col-md-9 col-sm-12 content-holder">
+                    <!-- CONTENT -->
+                    <div id="menu-container">
+                        
+                        <div class="logo-holder logo-top-margin">
+                            <a href="#" class="site-brand"><img src="images/纸飞机2.png" alt="" width="100" height="100"></a>
+                        </div>
+                        
+                        
+                        <div id="menu-1" class="homepage home-section text-center">
+                            <div class="welcome-text">
+                                <h2>未来已来，只是尚未流行。</h2>
+                                    
+                                <p>嗨！欢迎来到<strong> Note Go </strong>，这里是作者分享笔记与心得的空间。</p>
+                                <form action="#" method="get" class="subscribe-form">
+                                    <div class="row">
+                                        <fieldset class="col-md-offset-2 col-md-6">
+                                            <input name="subscribe-email" type="email" class="email" id="subscribe-email" placeholder="输入关键词..">
+                                        </fieldset>
+                                        <fieldset class="col-md-4 button-holder">
+                                            <input name="submit" type="submit" class="button default" id="submit" value="搜索">
+                                        </fieldset>
+                                    </div>
+                                    <br/>
+                                    <p class="subscribe-text" center>期待来自你的思想碰撞。</p>
+                                    <br/>
+                                  
+                                </form>
+                            </div>
+                        </div>
 
-		</div>
-	</footer>
-	
-  
-	<!-- jQuery -->
-	<script type="text/javascript" src="js/jquery-2.1.1.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	
-	<!-- Custom Theme JavaScript -->
-	<script src="js/agency.js"></script>
+                        <div id="menu-2" class="content about-section">
+                            <div class="row">
+                                <div class="col-md-8 col-sm-8">
+                                    <div class="box-content profile">
+                                        <h3 class="widget-title">作者</h3>
+                                        <div class="profile-thumb">
+                                            <img src="images/头像1.jpg" alt="">
+                                        </div>
+                                        <div class="profile-content">
+                                            <h5 class="profile-name">万川</h5>
+                                            <h5 class="profile-role">真正的终生学习者永远都是稀缺的。</h5>
+                                            <p>山大本科&清华硕士<br/>热爱编程，喜欢技术，定位互联网，希望推动<strong>AI</strong>进程让生活更美好。<br/>
+                                                兴趣广泛，心理学、哲学、金融...<br/>。。。
+											</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-4">
+                                    <div class="box-content">
+                                        <h3 class="widget-title">愿景</h3>
+                                        <p>搭建网站的初衷是为了记录学习过程，更好的评估学习效果和督促自己进步，同时希望自己的努力可以为更多人提供帮助。</p>
+                                        <div class="about-social">
+                                            <ul>
+                                                <li><a href="https://github.com/wanc97" class="fa fa-github"></a></li>
+                                                <li><a href="mailto:wanc97@qq.com" class="fa fa-envelope"></a></li>
+                                                <li><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzI4MzEzNjIxNw==#wechat_redirect" class="fa fa-weixin"></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-7 col-sm-7">
+                                    <div class="box-content"  width="500">
+                                        <h3 class="widget-title">知识&技术栈</h3>
+                                        <ul class="progess-bars">
+                                            <li>
+                                                <span>机器学习、深度学习、集成学习、数据分析、Python、Linux...<br/></span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
 
-	<!-- Plugin JavaScript -->
-	<script src="js/jquery.easing.min.js"></script>
-	<script src="js/classie.js"></script>
-	<script src="js/cbpAnimatedHeader.js"></script>
-	
-</body>
+                                <!--
+                                <div class="col-md-5 col-sm-5">
+                                    <div class="box-content">
+                                        <h3 class="widget-title">Our Studio</h3>
+                                        <div class="project-item">
+                                            <img src="images/7.jpg" alt="">
+                                            <div class="project-hover">
+                                                <h4>Great Nature Capture</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-7 col-sm-7">
+                                    <div class="box-content">
+                                        <h3 class="widget-title">知识&技术栈</h3>
+                                        <ul class="progess-bars">
+                                            <li>
+                                                <span>HTML CSS 80%</span>
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <span>PHOTOSHOP 95%</span>
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%;"></div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <span>WORDPRESS 70%</span>
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <span>PHP mySQL 50%</span>
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"></div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                -->
+                            </div>
+                        </div>
+
+                        <div id="menu-3" class="content gallery-section">
+                            <div class="box-content">
+                                <h3 class="widget-title">博客</h3>
+                                <div class="row">
+                                    <!--
+                                    <div class="box-item">
+                                        <img src="images/1.jpg" class="img-responsive"/>
+                                        <div class="content">
+                                            <h3>A Sweet Escape to Paris</h3>
+                                            <p>Proin lobortis mattis odio non ornare. Sed tempor nisi eu hendrerit luctus. Class aptent taciti sociosqu ad litora torquent per conubia nostravelit id sem tincidunt convallis ac eget quam. Vestibulum posuere porttitor sapien .</p>
+                                            <a href="single.html">Read More...</a>
+                                            <br><br>
+                                            <span>MAY 21, 2014 BY VAFPRESS</span><br>
+                                        </div>
+                                    </div>
+                                    -->
+                                    <div class="col-md-4 col-sm-6 col-xs-12">
+                                        <div class="project-item">
+                                            <img src="images/1.jpg" class="img-responsive" alt="">
+                                            <h3>A Sweet Escape to Paris</h3>
+                                            <p>Proin lobortis mattis odio non ornare. Sed tempor nisi eu hendrerit luctus. Class aptent taciti sociosqu ad litora torquent per conubia nostravelit id sem tincidunt convallis ac eget quam. Vestibulum posuere porttitor sapien .</p>
+                                                <a href="blog/single.html">Read More...</a>
+                                                <br><br>
+                                                <span>MAY 21, 2014 BY VAFPRESS</span><br>
+                                            
+                                            <div class="project-hover">
+                                                <a href="blog/single.html">Read More...</a>
+                                                <h4>Great Nature Capture</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-md-4 col-sm-6 col-xs-12">
+                                        <div class="project-item">
+                                            <img src="images/2.jpg" alt="">
+                                            <div class="project-hover">
+                                                <h4>Another Image Caption</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6 col-xs-12">
+                                        <div class="project-item">
+                                            <img src="images/3.jpg" alt="">
+                                            <div class="project-hover">
+                                                <h4>Great Nature Capture</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6 col-xs-12">
+                                        <div class="project-item">
+                                            <img src="images/4.jpg" alt="">
+                                            <div class="project-hover">
+                                                <h4>Another Image Caption</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6 col-xs-12">
+                                        <div class="project-item">
+                                            <img src="images/5.jpg" alt="">
+                                            <div class="project-hover">
+                                                <h4>Great Nature Capture</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6 col-xs-12">
+                                        <div class="project-item">
+                                            <img src="images/6.jpg" alt="">
+                                            <div class="project-hover">
+                                                <h4>Another Image Caption</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-pages">
+                                    <ul>
+                                        <li><a href="#">1</a></li>
+                                        <li><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li><a href="#">...</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="menu-5" class="content contact-section">
+                            <div class="row">
+                                <div class="col-md-8 col-sm-8">
+                                    <div class="box-content">
+                                        <h3 class="widget-title">互动</h3>
+                                        <form class="contact-form">
+                                            <fieldset>
+                                                <input type="text" class="name" id="name" placeholder="名称...">
+                                            </fieldset> 
+                                            <fieldset>
+                                                <input type="email" class="email" id="email" placeholder="邮箱...">
+                                            </fieldset> 
+                                            <!--
+                                            <fieldset>
+                                                <input type="text" class="subject" id="subject" placeholder="Subject...">
+                                            </fieldset>
+                                            -->
+                                            <fieldset>
+                                                <textarea name="message" id="message" cols="30" rows="4" placeholder="内容.."></textarea>
+                                            </fieldset>
+                                            <fieldset>
+                                                <input type="submit" class="button" id="button" value="发送信息">
+                                            </fieldset>
+                                        </form>
+                                    </div>
+                                </div>
+                                <!--
+                                <div class="col-md-4 col-sm-4">
+                                    <div class="box-content">
+                                        <h3 class="widget-title">Stay In Touch</h3>
+                                        <p>Sed ullamcorper, risus a tincidunt efficitur, massa mauris ultricies leo, eu interdum eros erat non augue. <br><br>
+										Suspendisse ornare sollicitudin lectus non egestas. Nam fermentum imperdiet ligula congue venenatis. </p>
+                                        <div class="about-social">
+                                            <ul>
+                                                <li><a href="#" class="fa fa-facebook"></a></li>
+                                                <li><a href="#" class="fa fa-twitter"></a></li>
+                                                <li><a href="#" class="fa fa-linkedin"></a></li>
+                                                <li><a href="#" class="fa fa-dribbble"></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                -->
+                            </div>
+                        </div>
+
+                        
+
+                    </div>
+                </div>
+
+
+                <div class="col-md-3 hidden-sm">
+                    
+                    <nav id="nav" class="main-navigation hidden-xs hidden-sm">
+                        <ul class="main-menu">
+                            <li>
+                                <a class="show-1 active homebutton" href="#"><i class="fa fa-home"></i>首页</a>
+                            </li>
+                            <li>
+                                <a class="show-3 projectbutton" href="#"><i class="fa fa-university"></i>博客</a>
+                            </li>
+                            <li>
+                                <a class="show-2 aboutbutton" href="#"><i class="fa fa-user"></i>作者</a>
+                            </li>
+                            <li>
+                                <a class="show-5 contactbutton" href="#"><i class="fa fa-envelope"></i>反馈</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <!-- SITE-FOOTER -->
+        <div class="site-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md10 text-center">
+                        <p>Copyright &copy; 2020 Note Go </p>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- .site-footer -->
+
+        <script src="js/vendor/jquery-1.10.2.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+		<!-- templatemo 439 rectangle -->
+    </body>
 </html>
